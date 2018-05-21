@@ -1,6 +1,8 @@
-% ?????CC0????????????
-earth_img = imread('images/earth.jpg');
-earth_img1 = imread('images/earth1.jpg');
-flower_img = imread('images/flower.jpg');
+earthImg = imread('images/earth.jpg');
+earthImg1 = imread('images/earth1.jpg');
+flowerImg = imread('images/flower.jpg');
 
-imshowpair(earth_img, earth_img1, 'diff');
+diff1 = imabsdiff(earthImg, earthImg1);
+diff2 = imabsdiff(earthImg, flowerImg);
+figure
+imshowpair(diff1, diff2, 'montage');

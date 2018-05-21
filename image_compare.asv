@@ -1,0 +1,7 @@
+earthImg = imread('images/earth.jpg');
+earthImg1 = imread('images/earth1.jpg');
+flowerImg = imread('images/flower.jpg');
+
+diff = imadsdiff();
+imshowpair(earthImg, earthImg1, 'diff');
+imshowpair(earthImg, flowerImg, 'diff');  
