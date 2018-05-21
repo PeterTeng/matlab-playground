@@ -1,4 +1,6 @@
-url = "http://heritage.stsci.edu/2007/14/images/p0714aa.jpg";
-rbg = webread(url);
-rbg = imresize(rbg, 0.6);
-imshow(rbg)
+% ?????CC0????????????
+earth_img = imread('images/earth.jpg');
+earth_img1 = imread('images/earth1.jpg');
+flower_img = imread('images/flower.jpg');
+
+imshowpair(earth_img, earth_img1, 'diff');
